@@ -1,0 +1,21 @@
+{
+  "store": "https://teslafiresystems.com",
+  "country": "CA",
+  "sellerName": "Tesla Fire Systems Inc",
+  "fallbackBrand": "Tesla Fire Systems",
+  "minProducts": 50,
+  "openai": {
+    "jsonl": "open ai/teslafiresystems_openai_feed.jsonl",
+    "csv": "open ai/teslafiresystems_openai_feed.csv"
+  },
+  "google": {
+    "type": "local_inventory",
+    "file": "GMC-local-inventory-feed-inc.csv",
+    "defaults": {
+      "store_code": "1010",
+      "quantity": "10",
+      "pickup_method": "buy",
+      "pickup_sla": "next_day"
+    }
+  }
+}
