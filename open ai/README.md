@@ -8,10 +8,11 @@ Product feed for OpenAI Ads Manager (Canada-only ad account), built from the liv
 | `teslafiresystems_openai_feed.csv` | Same feed as a spreadsheet for review |
 
 ## Links
-- JSONL (GitHub Pages): https://data.teslafiresystems.com/open%20ai/teslafiresystems_openai_feed.jsonl
-- CSV (GitHub Pages): https://data.teslafiresystems.com/open%20ai/teslafiresystems_openai_feed.csv
-- JSONL (raw fallback): https://raw.githubusercontent.com/SKGroupstor/tesla-fire-systems-inc-canada-feeds/main/open%20ai/teslafiresystems_openai_feed.jsonl
-- CSV (raw fallback): https://raw.githubusercontent.com/SKGroupstor/tesla-fire-systems-inc-canada-feeds/main/open%20ai/teslafiresystems_openai_feed.csv
+- **Hosted URL for Ads Manager (recommended):** https://data.teslafiresystems.com/open%20ai/teslafiresystems_openai_feed.tsv
+- Manual upload (Upload CSV or TXT): `teslafiresystems_openai_feed.txt` (tab-delimited) or `teslafiresystems_openai_feed.csv`
+- TXT: https://data.teslafiresystems.com/open%20ai/teslafiresystems_openai_feed.txt
+- CSV: https://data.teslafiresystems.com/open%20ai/teslafiresystems_openai_feed.csv
+- JSONL (SFTP / API): https://data.teslafiresystems.com/open%20ai/teslafiresystems_openai_feed.jsonl
 
 ## Feed settings
 - Seller: Tesla Fire Systems Inc
@@ -22,7 +23,10 @@ Product feed for OpenAI Ads Manager (Canada-only ad account), built from the liv
 - Excluded: $0 free promo items (Free Maintenance Tags, Free safety tie)
 
 ## Upload
-Ads Manager → Tools → Feeds → Create Feed → connect via SFTP → upload the `.jsonl` file.
-OpenAI treats each upload as the full catalog; refresh at least daily.
+Ads Manager → Tools → Feeds → open the feed's ⋮ menu:
+- **Hosted URL** (best — Ads Manager re-fetches it, and this repo rebuilds it daily): paste `https://data.teslafiresystems.com/open%20ai/teslafiresystems_openai_feed.tsv`
+- **Upload CSV or TXT**: upload `teslafiresystems_openai_feed.txt` (or `.csv`)
+
+Ads Manager does not accept the `.jsonl` file in its upload box; JSONL is for SFTP/API delivery only.
 
 Spec: https://developers.openai.com/commerce/specs/file-upload/products

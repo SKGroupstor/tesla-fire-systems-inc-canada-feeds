@@ -9,8 +9,9 @@ This repo holds the Canadian feeds for Google Merchant Center and ChatGPT (OpenA
 | Feed | Platform | File | Public URL |
 |---|---|---|---|
 | Local inventory feed | Google Merchant Center | `GMC-local-inventory-feed-inc.csv` | https://data.teslafiresystems.com/GMC-local-inventory-feed-inc.csv |
-| Product feed (upload file) | ChatGPT (OpenAI) Ads | `open ai/teslafiresystems_openai_feed.jsonl` | https://data.teslafiresystems.com/open%20ai/teslafiresystems_openai_feed.jsonl |
-| Product feed (review copy) | ChatGPT (OpenAI) Ads | `open ai/teslafiresystems_openai_feed.csv` | https://data.teslafiresystems.com/open%20ai/teslafiresystems_openai_feed.csv |
+| Product feed — **hosted URL for Ads Manager** | ChatGPT (OpenAI) Ads | `open ai/teslafiresystems_openai_feed.tsv` | https://data.teslafiresystems.com/open%20ai/teslafiresystems_openai_feed.tsv |
+| Product feed — manual upload (TXT / CSV) | ChatGPT (OpenAI) Ads | `open ai/teslafiresystems_openai_feed.txt`, `.csv` | https://data.teslafiresystems.com/open%20ai/teslafiresystems_openai_feed.txt |
+| Product feed — SFTP / API | ChatGPT (OpenAI) Ads | `open ai/teslafiresystems_openai_feed.jsonl` | https://data.teslafiresystems.com/open%20ai/teslafiresystems_openai_feed.jsonl |
 
 Raw fallback URLs (if GitHub Pages is ever down): replace `https://data.teslafiresystems.com/` with `https://raw.githubusercontent.com/SKGroupstor/tesla-fire-systems-inc-canada-feeds/main/`.
 
@@ -20,7 +21,7 @@ Raw fallback URLs (if GitHub Pages is ever down): replace `https://data.teslafir
 
 ### ChatGPT (OpenAI) Ads
 - Canada-only ad account; 313 products, prices in CAD, `target_countries: ["CA"]`.
-- OpenAI Ads Manager takes the feed by **SFTP upload** (Tools → Feeds → Create Feed). The URLs are for download and reference.
+- In Ads Manager (Tools → Feeds → ⋮) use **Hosted URL** with the `.tsv` link so it refreshes automatically, or **Upload CSV or TXT** with the `.txt`/`.csv` file. The `.jsonl` is for SFTP/API only.
 - Feed settings and notes: [`open ai/README.md`](open%20ai/README.md).
 
 ## Automatic updates
