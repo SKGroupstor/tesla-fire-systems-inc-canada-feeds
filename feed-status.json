@@ -1,6 +1,6 @@
 {
   "store": "https://teslafiresystems.com",
-  "last_change": "2026-11-26T17:21:29.282Z",
+  "last_change": "2026-11-27T16:59:53.272Z",
   "last_weekly_refresh": null,
   "last_changed_files": [
     "GMC-local-inventory-feed-inc.csv",
@@ -9,8 +9,8 @@
     "open ai/teslafiresystems_openai_feed.tsv",
     "open ai/teslafiresystems_openai_feed.txt"
   ],
-  "products_in_store": 315,
-  "openai_products": 313,
+  "products_in_store": 316,
+  "openai_products": 314,
   "known_product_ids": [
     "222",
     "229",
@@ -326,6 +326,7 @@
     "24235",
     "24236",
     "24386",
-    "24387"
+    "24387",
+    "24633"
   ]
 }
